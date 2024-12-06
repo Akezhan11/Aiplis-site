@@ -59,7 +59,7 @@
                 FromSoftware, Inc.
                 <br>ИЗДАТЕЛЬ:
                 FromSoftware, Inc., Bandai Namco Entertainment
-                <br><button class="btn" onclick="addToCart('Elden Ring', 'eldenring.jpg', 12593)">Купить за (<s>17 990₸</s>) 12 593₸</button>
+                <br><button class="btn" onclick="addToCart('Elden Ring', 'eldenring.jpg', 12593,17990)">Купить за (<s>17 990₸</s>) 12 593₸</button>
             </p>    
         </div>
         <div class="product">
@@ -70,7 +70,7 @@
             РАЗРАБОТЧИК:
             IO Interactive A/S<br>
             ИЗДАТЕЛЬ:
-            IO Interactive A/S<br><button class="btn" onclick="addToCart('HITMAN World of Assassination', 'hitman.jpg', 1520)">Купить за (<S>7 600₸</S>) 1 520₸</button></p>
+            IO Interactive A/S<br><button class="btn" onclick="addToCart('HITMAN World of Assassination', 'hitman.jpg', 1520,7600)">Купить за (<S>7 600₸</S>) 1 520₸</button></p>
         </div>
         <div class="product">
             <img class="productimg" src="maxresdefault.jpg">
@@ -80,7 +80,7 @@
                 РАЗРАБОТЧИК:
                 CAPCOM Co., Ltd.<br>
                 ИЗДАТЕЛЬ:
-                CAPCOM Co., Ltd.<br><button class="btn" onclick="addToCart('Street Fighter™ 6', 'maxresdefault.jpg', 8950)">Купить за (<s>17 899₸</s>) 8 950₸</button></p>
+                CAPCOM Co., Ltd.<br><button class="btn" onclick="addToCart('Street Fighter™ 6', 'maxresdefault.jpg', 8950,17899)">Купить за (<s>17 899₸</s>) 8 950₸</button></p>
         </div>
         <div class="product">
             <img class="productimg" src="Hollow Knight.jpeg">
@@ -90,7 +90,7 @@
                 РАЗРАБОТЧИК:
                 Team Cherry<br>
                 ИЗДАТЕЛЬ:
-                Team Cherry<br><button class="btn" onclick="addToCart('Hollow Knight', 'Hollow Knight.jpeg', 2050)">Купить за (<s>4 100₸</s>) 2 050₸</button></p>
+                Team Cherry<br><button class="btn" onclick="addToCart('Hollow Knight', 'Hollow Knight.jpeg', 2050,4100)">Купить за (<s>4 100₸</s>) 2 050₸</button></p>
         </div>
         <div class="product">
             <img class="productimg" src="Forza Motorsport.jpg">
@@ -100,34 +100,35 @@
                 РАЗРАБОТЧИК:
                 Turn 10<br>
                 ИЗДАТЕЛЬ:              
-                Xbox Game Studios<br><button class="btn" onclick="addToCart('Forza Motorsport', 'Forza Motorsport.jpg', 12490)">Купить за (<s>24 990₸</s>)12 490₸</button></p>
+                Xbox Game Studios<br><button class="btn" onclick="addToCart('Forza Motorsport', 'Forza Motorsport.jpg', 12490,24990)">Купить за (<s>24 990₸</s>)12 490₸</button></p>
         </div>
         <div class="product">
-            <img class="productimg" src="Sea Of Thieves.jpg">
+            <img class="productimg" src="SeaofThieves.jpg">
             <p class="productview"><span style="font-size: 40px;">Sea of Thieves: 2024 Edition</span><br><br><br>Sea of Thieves — культовая игра о пиратских приключениях. Все для настоящего пирата: охота за сокровищами, напряженные сражения, битвы с морскими чудовищами. Переработанное издание включает дополнительные цифровые материалы: поднимайте паруса!
                 <br><br><br>ДАТА ВЫХОДА:
                 3 июн. 2020 г.<br>
                 РАЗРАБОТЧИК:
                 Rare Ltd<br>
                 ИЗДАТЕЛЬ:              
-                Xbox Game Studios<br><button class="btn" onclick="addToCart('Sea of Thieves: 2024 Edition', 'Sea Of Thieves.jpg', 5450)">Купить за (<s>10 900₸</s>) 5 450₸</button></p>
+                Xbox Game Studios<br><button class="btn" onclick="addToCart('Sea of Thieves: 2024 Edition', 'SeaofThieves.jpg', 5450, 10900)">Купить за (<s>10 900₸</s>) 5 450₸</button></p>
         </div>
     </div>
+    <br><br><br><br><br><br><br><br>
     <div id="cart-container" class="cart">
-        <div class="cart-header glow">
+        <div class="cart-header ">
             <h2 class="cart-title">Корзина</h2>
         </div>
         <div class="cart-body">
             <ul class="cart-items">
-                <!-- Здесь будут добавляться товары -->
             </ul>
         </div>
         <div class="cart-footer">
-            <p class="cart-total">Итого: <span id="cart-total-price">0₸</span></p>
+            <p class="cart-total">Итого: <span id="cart-total-price">0₸</span></p>  
+            <p class="cart-total-original" id="cart-total-original"></p>  
             <button class="btn checkout-btn">Оформить заказ</button>
-        </div>
+        </div>    
     </div>
-    <button id="cart-toggle" class="cart-toggle-btn" onclick="toggleCart()">🛒</button>
+    <button id="cart-toggle" class="cart-toggle-btn" onclick="toggleCart()"></button>
     <script src="cart.js"></script>
 </body>
 </html>
