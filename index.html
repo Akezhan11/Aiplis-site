@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All.AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Neucha&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Lobster&family=Neucha&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="block glow">
+        <img src="hamburger.png" class="burgermenu" id="burger">
+        <p class="logo">All.Ai</p>
+        <input class="searchbar" type="search" placeholder="Поиск..." />
+    </div>
+    <section class="container">
+        <div class="slider-wraper">
+            <div class="slider2 glow2"> 
+                <div class="slider">
+                    <img id="slide1" src="welcome.jpg" alt="welcome">
+                    <img id="slide2" src="Blackfriday.jpg" alt="Blackfriday">
+                    <img id="slide4" src="relax.jpg" alt="relax">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide1"></a>
+                    <a href="#slide2"></a>
+                    <a href="#slide4"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <script src="baner.js"></script>
+    <audio id="background-audio"  autoplay muted loop>
+        <source src="Alleyezonme.mp3" type="audio/mpeg">
+    </audio>
+    <script src="audio.js"></script>
+    <p align="center" class="welcomespeech">
+        Бабадан қалған бай мұра – ата-бабамыз әрдайым өздері үшін ең үздігін таңдай білді. Енді ең таңдаулыны таңдау кезегі сізде — All.Ai-да!
+    </p>
+    <div class="mainbody">
+        <div class="textcontent">
+            <p>ЛИДЕР ПРОДАЖ</p>
+            <p>Black Myth: Wukong — ролевой боевик по мотивам китайской мифологии. Став Избранным, вы отправитесь в приключение, полное испытаний и чудес, в котором вам предстоит приподнять завесу тайны над великой легендой.«Сияющих чудес открылся мир незримый,На каждом повороте — новые картины».</p>
+        </div>
+        <div>
+            <iframe class="videpp" width="560" height="315" src="https://www.youtube.com/embed/u83VdXAVq08?si=JFFA6K3-XSdi8uFO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="salesheet">
+        <div class="product">
+            <img class="productimg" src="eldenring.jpg">
+            <p class="productview"><span style="font-size: 40px;">ELDEN RING</span> <br><br><br>НОВЫЙ ФЭНТЕЗИЙНЫЙ РОЛЕВОЙ БОЕВИК. Восстань, погасшая душа! Междуземье ждёт своего повелителя. Пусть благодать приведёт тебя к Кольцу Элден.
+                <br><br><br>ДАТА ВЫХОДА:25 фев. 2022 г.
+                <br>РАЗРАБОТЧИК:
+                FromSoftware, Inc.
+                <br>ИЗДАТЕЛЬ:
+                FromSoftware, Inc., Bandai Namco Entertainment
+                <br><button class="btn" onclick="addToCart('Elden Ring', 'eldenring.jpg', 12593)">Купить за (<s>17 990₸</s>) 12 593₸</button>
+            </p>    
+        </div>
+        <div class="product">
+            <img class="productimg" src="hitman.jpg">
+            <p class="productview"><span style="font-size: 40px;">HITMAN World of Assassination</span><br><br><br>Войдите в мир наемных убийц. «HITMAN: Мир наемных убийц» включает все лучшее из HITMAN, HITMAN 2 и HITMAN 3, в том числе основную кампанию, режим контрактов, обострения, аркадные контракты на неуловимую цель и режим в стиле roguelike «HITMAN: Фрилансер».
+            <br><br><br>ДАТА ВЫХОДА:
+            20 янв. 2022 г<br>
+            РАЗРАБОТЧИК:
+            IO Interactive A/S<br>
+            ИЗДАТЕЛЬ:
+            IO Interactive A/S<br><button class="btn" onclick="addToCart('HITMAN World of Assassination', 'hitman.jpg', 1520)">Купить за (<S>7 600₸</S>) 1 520₸</button></p>
+        </div>
+        <div class="product">
+            <img class="productimg" src="maxresdefault.jpg">
+            <p class="productview"><span style="font-size: 40px;">Street Fighter™ 6</span><br><br><br>Новый «Боец» от Capcom! Релиз Street Fighter™ 6 состоится 2 июня 2023 года по всему миру. Это настоящая эволюция игровой серии Street Fighter™! Три режима: «Чемпионат мира», «Поле боя» и «Центр сражений».
+                <br><br><br>ДАТА ВЫХОДА:
+                1 июн. 2023 г.<br>
+                РАЗРАБОТЧИК:
+                CAPCOM Co., Ltd.<br>
+                ИЗДАТЕЛЬ:
+                CAPCOM Co., Ltd.<br><button class="btn" onclick="addToCart('Street Fighter™ 6', 'maxresdefault.jpg', 8950)">Купить за (<s>17 899₸</s>) 8 950₸</button></p>
+        </div>
+        <div class="product">
+            <img class="productimg" src="Hollow Knight.jpeg">
+            <p class="productview"><span style="font-size: 40px;">Hollow Knight</span><br><br><br>Hollow Knight – это эпическое приключение в огромном разрушенном королевстве, полном насекомых и героев. Исследуйте извилистые пещеры, сражайтесь с порчеными тварями и заводите дружбу со странными жуками – все это в классической двухмерной ручной рисовке.
+                <br><br><br>ДАТА ВЫХОДА:
+                24 фев. 2017 г. г.<br>
+                РАЗРАБОТЧИК:
+                Team Cherry<br>
+                ИЗДАТЕЛЬ:
+                Team Cherry<br><button class="btn" onclick="addToCart('Hollow Knight', 'Hollow Knight.jpeg', 2050)">Купить за (<s>4 100₸</s>) 2 050₸</button></p>
+        </div>
+        <div class="product">
+            <img class="productimg" src="Forza Motorsport.jpg">
+            <p class="productview"><span style="font-size: 40px;">Forza Motorsport</span><br><br><br>Превзойдите соперников в режиме карьеры. Испытайте более 500 автомобилей и соревнуйтесь с игроками по всему миру в гонках на 27 знаменитых трассах, в том числе увлекательнейшей Нюрбургринг Нордшляйфе!
+                <br><br><br>ДАТА ВЫХОДА:
+                10 окт. 2023 г.<br>
+                РАЗРАБОТЧИК:
+                Turn 10<br>
+                ИЗДАТЕЛЬ:              
+                Xbox Game Studios<br><button class="btn" onclick="addToCart('Forza Motorsport', 'Forza Motorsport.jpg', 12490)">Купить за (<s>24 990₸</s>)12 490₸</button></p>
+        </div>
+        <div class="product">
+            <img class="productimg" src="Sea Of Thieves.jpg">
+            <p class="productview"><span style="font-size: 40px;">Sea of Thieves: 2024 Edition</span><br><br><br>Sea of Thieves — культовая игра о пиратских приключениях. Все для настоящего пирата: охота за сокровищами, напряженные сражения, битвы с морскими чудовищами. Переработанное издание включает дополнительные цифровые материалы: поднимайте паруса!
+                <br><br><br>ДАТА ВЫХОДА:
+                3 июн. 2020 г.<br>
+                РАЗРАБОТЧИК:
+                Rare Ltd<br>
+                ИЗДАТЕЛЬ:              
+                Xbox Game Studios<br><button class="btn" onclick="addToCart('Sea of Thieves: 2024 Edition', 'Sea Of Thieves.jpg', 5450)">Купить за (<s>10 900₸</s>) 5 450₸</button></p>
+        </div>
+    </div>
+    <div id="cart-container" class="cart">
+        <div class="cart-header glow">
+            <h2 class="cart-title">Корзина</h2>
+        </div>
+        <div class="cart-body">
+            <ul class="cart-items">
+                <!-- Здесь будут добавляться товары -->
+            </ul>
+        </div>
+        <div class="cart-footer">
+            <p class="cart-total">Итого: <span id="cart-total-price">0₸</span></p>
+            <button class="btn checkout-btn">Оформить заказ</button>
+        </div>
+    </div>
+    <button id="cart-toggle" class="cart-toggle-btn" onclick="toggleCart()">🛒</button>
+    <script src="cart.js"></script>
+</body>
+</html>
